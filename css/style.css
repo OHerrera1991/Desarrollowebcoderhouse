@@ -10,7 +10,9 @@
 }
 .header {
     display: flex;
-    background-color: #00c3ff;
+    /**background-color: #00c3ff;**/
+    background: linear-gradient(45deg, #00c3ff 0%, #60daff, #00c3ffc2);
+    background-size: 400% 400%;
     height: 130px;
     padding: 10px;
     justify-content: space-between;

@@ -9,10 +9,14 @@ body{
 header{
     display:flex;
     min-height: 200px;
-    background-color: #00c3ff;
+    /**background-color: #00c3ff;**/
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    background: linear-gradient(45deg, #0096ec 0%, #00a2ff, #0099ff, #85e3ff);
+    background-size: 200%;
+    animation: colorb 10s ease-in-out infinite;
+
 }
 
 .Logo{
@@ -160,7 +164,9 @@ nav ul li a:hover {
 .support__btn {
     font-size: 2vw;
     font-weight: bold;
-    background-color: #00c3ff;
+    background: linear-gradient(45deg, #0096ec 0%, #00a2ff, #0099ff, #85e3ff);
+    background-size: 200%;
+    animation: colorb 2s ease-in-out infinite;
     color: #ffffff;
     position: absolute;
     top : 60%;
@@ -211,7 +217,9 @@ nav ul li a:hover {
     display: grid;
     width: 100%;
     justify-content: center;
-    background-color: #00c3ff;
+    background: linear-gradient(45deg, #0096ec 0%, #00a2ff, #0099ff, #85e3ff);
+    background-size: 200%;
+    animation: colorb 7s ease-in-out infinite;
     grid-template-columns: 32% 68%;
 }
 
@@ -593,4 +601,10 @@ nav ul li a:hover {
         text-align-last: center;
     }
      
+}
+
+@keyframes colorb{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
 }
