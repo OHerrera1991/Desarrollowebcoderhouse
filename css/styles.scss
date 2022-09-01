@@ -1,0 +1,27 @@
+$color-txt-nav: #ffffff;
+@mixin navenlinea {
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+@mixin nav-hov {
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.Header__nav {
+
+    li{
+        @include navenlinea();
+        a{
+            color: $color-txt-nav;
+            text-decoration: none;
+                &:hover{
+                    @include nav-hov;
+                }
+        } 
+    }
+}
