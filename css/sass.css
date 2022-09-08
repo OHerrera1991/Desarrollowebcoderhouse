@@ -13,4 +13,16 @@
   border-bottom: 2px solid #ffffff;
 }
 
+.p3, .p4 {
+    font-size: 3vw;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px #000000;
+}
+
+.p4 {
+  font-size: 2vw;
+}
+
+
 /*# sourceMappingURL=sass.css.map */

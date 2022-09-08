@@ -1,27 +1,28 @@
-$color-txt-nav: #ffffff;
-@mixin navenlinea {
-    display: inline-block;
-    margin-right: 10px;
-    
-}
-
-@mixin nav-hov {
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
-}
+@import "__mixins.scss";
+@import "__variables.scss";
 
 .Header__nav {
-
     li{
         @include navenlinea();
         a{
-            color: $color-txt-nav;
+            color: map-get($map: mapexample, $key: color-txt-nav);
             text-decoration: none;
                 &:hover{
                     @include nav-hov;
                 }
         } 
     }
+}
+
+.p3 {
+    font-size: 3vw;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px #000000;
+}
+
+.p4 {
+    @extend .p3;
+    font-size: 2vw;
+
 }

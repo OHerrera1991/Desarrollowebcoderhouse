@@ -149,7 +149,7 @@ nav ul li a {
     left: 7%;
 }
 
-.p3 {
+/**.p3 {
     font-size: 3vw;
     font-weight: bold;
     color: #ffffff;
@@ -161,7 +161,7 @@ nav ul li a {
     font-weight: bold;
     color: #ffffff;
     text-shadow: 2px 2px 10px #000000;
-}
+}**/
 
 .support__btn {
     font-size: 2vw;
