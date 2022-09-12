@@ -1,0 +1,52 @@
+//** PRODUCTS **//
+
+.prod__title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: $negrita;
+    color: $ft-blue;
+    margin-top: 100px;
+}
+
+.prod__div{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.prod__div .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: $card-box-shadow;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+        h4{
+            font-weight: 600;
+        }
+        p{
+            padding: 0 1rem;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        a{
+            font-weight: 300;
+            text-decoration: none;
+            color: $ft-blue;
+        }
+        img{
+            width: 330px;
+            height: 220px;
+        }
+        &:hover{
+            transform: translateY(-15px);
+            box-shadow: $card-box-shadow-h;
+        }
+}

@@ -1,0 +1,65 @@
+/** FOOTER */
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.p5 {
+    font-size: 40px;
+    font-weight: $negrita;
+    color: $ft-blue;
+    position: absolute;
+    top : 10%;
+    left: 40%;
+}
+
+.p6 {
+    @extend .p5;
+    font-size: 30px;
+    font-weight: normal;
+    top : 40%;
+    left: 5%;
+    text-align-last: center;
+}
+
+.p7 {
+    @extend .p5;
+    top : -15%;
+    left: 37%;
+}
+
+
+
+.footer__grid {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    @include gradiant;
+    grid-template-columns: 32% 68%;
+        div{
+            text-align: center;
+            font-weight: $negrita;
+        }
+        p{
+            color: $ft-white;
+            font-size: 18px;
+        }
+}
+
+.buttons {
+    width: 100%;
+    margin: auto;
+        a{
+            text-decoration: none;
+            font-size: 40px;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            color: $ft-white;
+            transition: $transition-btn;
+                &:hover{
+                    transform: $transform-btn;
+                }
+        }
+}

@@ -1,0 +1,53 @@
+/** SUPPORT */
+.support {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0%;
+    margin-bottom: -4px;
+        img{
+            width: 100%;
+        }
+        h3{
+            position: absolute;
+            top : 2%;
+            left: 15%;
+        }
+        p{
+            position: absolute;
+            top : 30%;
+            left: 7%;
+        }
+}
+
+.p3 {
+    font-size: 3vw;
+    font-weight: $negrita;
+    color: $ft-white;
+    text-shadow: $bnr-box-shadow;
+}
+
+.p4 {
+    @extend .p3;
+    font-size: 2vw;
+}
+
+.support__btn {
+    font-size: 2vw;
+    @include gradiant-btn;
+    font-weight: $negrita;
+    color: $ft-white;
+    position: absolute;
+    top : 60%;
+    left: 26%;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    box-shadow: $btn-box-shadow;
+    transition: $transition-btn;
+        &:hover{
+            background-color: $bg-blue;
+            transform: $transform-btn;
+        }
+    }

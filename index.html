@@ -7,8 +7,7 @@
     <title>Tanques de Agua</title>
     <meta name="description" content="RotoArg Argentina es el fabricante de la mas completa linea de tanques de polietileno. Ideal para proyectos domiciliarios, propiedad horizontal y tratamiento de aguas.">
     <meta name="keywords"  content="TANQUES, AGUA, ROTOARG, ROTOPLAST, ETERN IT, FERRETERIA, HERRAMIENTAS, HOGAR, CONSTRUCCION, CAÑOS, EMPRESA, SOLUCION, SELLADORES, ANTIALGAS, ADITIVOS">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/sass.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -22,16 +21,38 @@
         </div>
         <!--End Header Logo-->
        
-        <!-- Header Navigation Bar-->
+        <nav class="nav">
+            <div class="nav__container">
+                <label for="menu" class="nav__label">
+                    <img src="/assets/menu.svg" class="nav__img">
+                </label>
+                <input type="checkbox" id="menu" class="nav__input">
+            
+                <div class="nav__menu">
+                    <a href="/index.html" class="nav__item">Inicio</a>
+                    <a href="/pages/sobrenosotros.html" class="nav__item">Nosotros</a>
+                    <a href="/pages/productos.html" class="nav__item">Productos</a>
+                    <a href="/pages/soporte.html" class="nav__item">Soporte</a>
+                    <a href="/pages/contacto.html" class="nav__item">Contacto</a>
+                </div>
+            
+            </div>
+        
+        </nav>
+
+        <!-- Header Navigation Bar--> 
         <nav class="Header__nav">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/sobrenosotros.html">Nosotros</a></li>
-                <li><a href="pages/productos.html">Productos</a></li>
-                <li><a href="pages/soporte.html">Soporte</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li>
+                    <a href="index.html">Inicio</a>
+                    <a href="pages/sobrenosotros.html">Nosotros</a>
+                    <a href="pages/productos.html">Productos</a>
+                    <a href="pages/soporte.html">Soporte</a>
+                    <a href="pages/contacto.html">Contacto</a>
+                </li>
             </ul>
         </nav>
+
         <!-- End Header navigation Bar  -->
     </header>
 <!--End Header-->    
@@ -60,7 +81,6 @@
             </form>
     </section>
 <!--End Support-->
-
 <!--Footer-->
     <footer class="footer__grid" >
         

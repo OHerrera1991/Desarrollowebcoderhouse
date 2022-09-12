@@ -1,0 +1,18 @@
+@mixin borders{
+    border-top: 2px solid $ft-white;
+    border-left: 2px solid $ft-white;
+    border-right: 2px solid $ft-white;
+    border-bottom: 2px solid $ft-white;
+}
+
+@mixin gradiant{
+    background: $gradiant-blue;
+    background-size: $gradiant-bgz;
+    animation: $gradiant-animation
+}
+
+@mixin gradiant-btn{
+    background: $gradiant-blue;
+    background-size: $gradiant-bgz;
+    animation: $gradiant-animation-btn;
+}
