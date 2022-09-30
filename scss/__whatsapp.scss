@@ -1,0 +1,109 @@
+.whatsapp{
+    position: relative;
+    width: 100%;
+    margin-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}  
+  
+.image-icon-whatsapp{
+  position: absolute;
+  top: 0%;
+  cursor: pointer;
+  transition: all 0.2s;
+        &:hover{
+            transform: scale(0.9);
+        }
+        &:active{
+            transform: scale(0.8);
+        }
+}
+
+.formulariowtsp{
+  width: 220px;
+  height: 280px;
+  border-radius: 5px;
+  position: relative;
+  top: 100px;
+  box-shadow: $form-shadow;
+  padding: 5px 10px;
+  display: none;
+}
+
+.inputwts{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  font-family: arial;
+  font-size: 13px;
+  border-radius: 5px;
+  border: $input-border;
+  color: $ft-gray;
+        &:focus{
+            outline: none;
+        }
+}
+
+.textareawts{
+  width: 100%;
+  min-width: 100%;
+  box-sizing: border-box;
+  height: 140px;
+  max-height: 140px;
+  min-height: 140px;
+  font-family: arial;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 5px;
+  border:$input-border;
+  color: $ft-gray;
+        &:focus{
+            outline: none;
+        }
+}
+
+.newmessagewts{
+  font-family: arial;
+  display: block;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 10px;
+}
+
+.btnwtsp{
+  width: 100%;
+  border: none;
+  padding: 5px;
+  @include gradiant-btn;
+  border-radius: 5px;
+  color: $ft-white;
+  cursor: pointer;
+}
+
+label{
+  font-family: arial;
+  font-size: 14px;
+  color: $ft-gray;
+}
+.entrarysalir{
+  display: block;
+}
+.closemodal{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  @include gradiant-btn;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  color: $ft-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  line-height: 15px;
+  cursor: pointer;
+}

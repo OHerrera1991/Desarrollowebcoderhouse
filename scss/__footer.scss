@@ -12,21 +12,36 @@ footer{
     position: absolute;
     top : 10%;
     left: 40%;
+        @media (max-width: 375px) {
+            font-size: 10px;
+            top : 10%;
+            left: 40%;
+        }
 }
 
 .p6 {
-    @extend .p5;
+    position: absolute;
     font-size: 30px;
+    color: $ft-blue;
     font-weight: normal;
     top : 40%;
     left: 5%;
     text-align-last: center;
+        @media (max-width: 375px) {
+            font-size: 10px;
+        }
 }
 
 .p7 {
-    @extend .p5;
+    font-size: 40px;
+    font-weight: $negrita;
+    color: $ft-blue;
+    position: absolute;
     top : -15%;
     left: 37%;
+        @media (max-width: 375px) {
+            font-size: 10px;
+        }
 }
 
 
@@ -37,6 +52,11 @@ footer{
     justify-content: center;
     @include gradiant;
     grid-template-columns: 32% 68%;
+        @media (max-width: 375px) {
+            width: 385px;
+            height: 160px;
+            grid-template-columns: 32% 68%;
+        }
         div{
             text-align: center;
             font-weight: $negrita;
@@ -44,6 +64,15 @@ footer{
         p{
             color: $ft-white;
             font-size: 18px;
+            @media (max-width: 1080px) {    
+                font-size: 16px;
+            }
+            @media (max-width: 760px) {
+                font-size: 14px;
+            } 
+            @media (max-width: 375px) {
+                font-size: 8px;
+            }
         }
 }
 
@@ -58,6 +87,9 @@ footer{
             line-height: 60px;
             color: $ft-white;
             transition: $transition-btn;
+                @media (max-width: 375px) {
+                    font-size: 13px;
+                }
                 &:hover{
                     transform: $transform-btn;
                 }

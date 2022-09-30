@@ -6,18 +6,9 @@
     text-align: center;
     width: auto;
     min-width: none;
-}
-
-.support__iframe{
-   width: 760px; 
-   height: auto;
-}
-
-.video-responsive{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-bottom: 20px;
+        @media (max-width: 375px) {
+            width: 385px;
+        }
 }
 
 .contact__title{
@@ -34,6 +25,9 @@
 
 .fieldset{
     background-color: $ft-blue;
+        @media (max-width: 375px) {
+            width: 385px;
+        }
 }
 .form__group{
     color: $ft-white;
